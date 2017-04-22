@@ -47,12 +47,21 @@
 }
 </style>
 <h1>api documentation for
-    <a href="https://github.com/wwayne/react-tooltip">react-tooltip (v3.2.10)</a>
+    <a href="https://github.com/wwayne/react-tooltip">react-tooltip (v3.3.0)</a>
 </h1>
 <h4>react tooltip component</h4>
 <div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.react-tooltip">module react-tooltip</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tooltip.react-tooltip">
+            function <span class="apidocSignatureSpan"></span>react-tooltip
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
 
         <li>
 
@@ -529,6 +538,52 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.react-tooltip" id="apidoc.module.react-tooltip">module react-tooltip</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tooltip.react-tooltip" id="apidoc.element.react-tooltip.react-tooltip">
+        function <span class="apidocSignatureSpan"></span>react-tooltip
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ReactTooltip(props) {
+  _classCallCheck(this, ReactTooltip);
+
+  var _this = _possibleConstructorReturn(this, (ReactTooltip.__proto__ || Object.getPrototypeOf(ReactTooltip)).call(this, props));
+
+  _this.state = {
+    place: 'top', // Direction of tooltip
+    type: 'dark', // Color theme of tooltip
+    effect: 'float', // float or fixed
+    show: false,
+    border: false,
+    placeholder: '',
+    offset: {},
+    extraClass: '',
+    html: false,
+    delayHide: 0,
+    delayShow: 0,
+    event: props.event || null,
+    eventOff: props.eventOff || null,
+    currentEvent: null, // Current mouse event
+    currentTarget: null, // Current target of mouse event
+    ariaProps: (0, _aria.parseAria)(props), // aria- and role attributes
+    isEmptyTip: false,
+    disable: false
+  };
+
+  _this.bind(['showTooltip', 'updateTooltip', 'hideTooltip', 'globalRebuild', 'globalShow', 'globalHide', 'onWindowResize']);
+
+  _this.mount = true;
+  _this.delayShowLoop = null;
+  _this.delayHideLoop = null;
+  _this.intervalUpdateContent = null;
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
